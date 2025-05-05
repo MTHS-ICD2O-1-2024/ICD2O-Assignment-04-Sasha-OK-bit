@@ -13,19 +13,19 @@ function calculaterandompreferrence () {
   const Pepperionis= document.getElementById('option-pepperionis')
   const Ham = document.getElementById('option-ham')
 
-  if ((Cheese || Pepperionis)===true) {
+  if (((Cheese) || (Pepperionis))  == true) {
   document.getElementById('answer1').innerHTML =
   "<p>Your pizza would taste American</p>" 
   }
-    else if((Ham || Pineapples)===true) {
+    else if(((Ham) || (Pineapples))  == true) {
     document.getElementById('answer1').innerHTML =
       "<p>You got Hawaii Style Pizza</p>" 
   }
-    else if((Olives)===true ) {
+    else if(((Olives))  == true ) {
     document.getElementById('answer1').innerHTML =
       "<p>You consider of something european</p>" 
   }
-    else if ((Bacon||Onions)===true) {
+    else if (((Bacon) || (Onions))  == true) {
     document.getElementById('answer1').innerHTML =
       "<p> You're a odd person in Canada, nice </p>" 
   }
