@@ -5,33 +5,33 @@
 // This file contains the JS functions for index.html
 
 function calculaterandompreferrence () {
-  const Cheese= document.getElementById('option-cheese').checked
-  const Onions= document.getElementById('option-onions').checked
-  const Bacon= document.getElementById('option-bacon').checked
-  const Olives= document.getElementById('option-olives').checked
-  const Pineapples= document.getElementById('option-pineapples').checked
-  const Pepperionis= document.getElementById('option-pepperionis').checked
-  const Ham = document.getElementById('option-ham').checked
+  const Cheese= document.getElementById('option-cheese')
+  const Onions= document.getElementById('option-onions')
+  const Bacon= document.getElementById('option-bacon')
+  const Olives= document.getElementById('option-olives')
+  const Pineapples= document.getElementById('option-pineapples')
+  const Pepperionis= document.getElementById('option-pepperionis')
+  const Ham = document.getElementById('option-ham')
 
-  if (Cheese && Pepperionis) {
+  if ((Cheese || Pepperionis)===true) {
   document.getElementById('answer1').innerHTML =
-  "<p>...</p>" 
+  "<p>Your pizza would taste American</p>" 
   }
-    else if(lengthA === lengthB === lengthC) {
+    else if((Ham || Pineapples)===true) {
     document.getElementById('answer1').innerHTML =
-      "<p>You calculated towards a Equilateral triangle type </p>" 
+      "<p>You got Hawaii Style Pizza</p>" 
   }
-    else if(lengthA === lengthB !== lengthC || lengthA !== lengthB === lengthC || lengthC === lengthA !== lengthB) {
+    else if((Olives)===true ) {
     document.getElementById('answer1').innerHTML =
-      "<p>You calculated towards a Isocenes triangle type</p>" 
+      "<p>You consider of something european</p>" 
   }
-    else if (lengthA !== lengthB !== lengthC && lengthC !== lengthA) {
+    else if ((Bacon||Onions)===true) {
     document.getElementById('answer1').innerHTML =
-      "<p>You calculated towards a Scalene triangle type </p>" 
+      "<p> You're a odd person in Canada, nice </p>" 
   }
     else {
     document.getElementById('answer1').innerHTML =
-      "<p>You calculation got an error</p>" 
+      "<p>So...Pizza with just Bread and Tomato Sauce??</p>" 
 
 }
 
